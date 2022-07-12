@@ -12,7 +12,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = '' # Development Database
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://hkjfjbqkrbrnqp:046d530a854268d806bf4330d45dbb961da9bc0a5d02ab4d3541a13e32164f4b@ec2-44-197-128-108.compute-1.amazonaws.com:5432/d285vervj1b6q2' # Deployment Database
+    app.config['DATABASE_URL'] = 'postgres://aieupobonplfop:2c991818cdbf4b2a79cf3797a528d501a4867a7f7117976a20cff9f64acbd5ec@ec2-44-195-169-163.compute-1.amazonaws.com:5432/d10herg19701ld' # Deployment Database
 
 #add this to avoid getting warning in the console
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
