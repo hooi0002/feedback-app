@@ -12,7 +12,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:901029@localhost/EICodeCasting1' # Development Database
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://uvnhcocezwrkma:5c2457495dab6ad37307a6309e043f245cb651c3873218b7ff6d1a8ee3e8759e@ec2-44-205-41-76.compute-1.amazonaws.com:5432/d19b0b0ipsp9rq' # Deployment Database
+    app.config['DATABASE_URL'] = 'postgres://uvnhcocezwrkma:5c2457495dab6ad37307a6309e043f245cb651c3873218b7ff6d1a8ee3e8759e@ec2-44-205-41-76.compute-1.amazonaws.com:5432/d19b0b0ipsp9rq' # Deployment Database
 
 #add this to avoid getting warning in the console
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
